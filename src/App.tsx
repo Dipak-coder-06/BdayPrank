@@ -8,7 +8,7 @@ import { HeroSection } from './components/HeroSection';
 import { VideoGallery } from './components/VideoGallery';
 import { MemoriesSection } from './components/MemoriesSection';
 import { siteConfig } from './config/siteConfig';
-import { playDrumHit, playSuccessChime } from './utils/sound';
+import { playDrumHit, playSuccessChime, soundManager } from './utils/sound';
 import { fireMassiveConfetti, fireHeartConfetti } from './utils/confetti';
 import './index.css';
 
@@ -17,14 +17,28 @@ function App() {
   const [muted, setMuted] = useState(true);
   const [showFinalMessage, setShowFinalMessage] = useState(false);
 
+  useEffect(() => {
+    soundManager.init();
+    if (!muted) {
+      soundManager.playBgMusic();
+    }
+  }, [muted]);
+
   const handleIntroComplete = useCallback(() => {
     setShowIntro(false);
     playSuccessChime();
     fireMassiveConfetti();
-  }, []);
+    if (!muted) {
+      soundManager.playBgMusic();
+    }
+  }, [muted]);
 
   const toggleMute = useCallback(() => {
-    setMuted(prev => !prev);
+    setMuted(prev => {
+      const newMuted = !prev;
+      soundManager.toggleMute();
+      return newMuted;
+    });
   }, []);
 
   const handleFinalReveal = useCallback(() => {

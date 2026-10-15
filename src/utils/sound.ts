@@ -4,6 +4,7 @@ class SoundManager {
   private sounds: Map<string, Howl> = new Map();
   private muted = false;
   private initialized = false;
+  private bgMusic: Howl | null = null;
 
   init() {
     if (this.initialized) return;
@@ -38,6 +39,13 @@ class SoundManager {
       volume: 0.5,
     }));
 
+    this.bgMusic = new Howl({
+      src: ['/bg_song.mp3'],
+      loop: true,
+      volume: 0.3,
+      html5: true,
+    });
+
     this.initialized = true;
   }
 
@@ -49,14 +57,36 @@ class SoundManager {
     }
   }
 
+  playBgMusic() {
+    if (this.muted || !this.bgMusic) return;
+    this.bgMusic.play();
+  }
+
+  pauseBgMusic() {
+    if (this.bgMusic) {
+      this.bgMusic.pause();
+    }
+  }
+
   toggleMute() {
     this.muted = !this.muted;
     Howler.mute(this.muted);
+    if (this.muted) {
+      this.pauseBgMusic();
+    } else {
+      this.playBgMusic();
+    }
     return this.muted;
   }
 
   isMuted() {
     return this.muted;
+  }
+
+  setBgMusicVolume(volume: number) {
+    if (this.bgMusic) {
+      this.bgMusic.volume(volume);
+    }
   }
 }
 
