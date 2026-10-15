@@ -1,0 +1,99 @@
+export const siteConfig = {
+  friendName: "Shivam",
+  senderName: "Your Bestie",
+  friendPhotos: [
+    "/img1.jpeg",
+    "/img2.jpeg",
+    "/img3.jpeg",
+    "/img4.jpeg",
+    "/img5.jpeg",
+    "/img6.jpeg",
+    "/img7.jpeg",
+  ],
+  friendVideos: [
+    { src: "/vid1.mp4", poster: "/img1.jpeg", caption: "Caught in 4K 📸" },
+    { src: "/vid2.mp4", poster: "/img2.jpeg", caption: "The main character moment" },
+    { src: "/vid3.mp4", poster: "/img3.jpeg", caption: "Plot twist: still legendary" },
+    { src: "/vid4.mp4", poster: "/img4.jpeg", caption: "Error 404: Dignity not found" },
+  ],
+  memoryCaptions: [
+    "Evidence that we once had functioning brain cells.",
+    "Peak intelligence was not present here.",
+    "One photo. Zero explanations.",
+    "Moments before everything went wrong.",
+    "The 'before' picture. Still waiting for the 'after'.",
+    "Proof that we survive our own decisions.",
+    "If these walls could talk, they'd ask for a lawyer.",
+  ],
+  roasts: [
+    "Age increased. Wisdom still buffering...",
+    "Bro has premium confidence with a free-trial brain.",
+    "Main character energy. Background character decisions.",
+    "Your future is bright. Your sleep schedule isn't.",
+    "Even Google doesn't have answers for your life choices.",
+    "Running on vibes, chaos, and 3 hours of sleep.",
+    "Plot armor: Thick. Common sense: Missing.",
+    "NPC dialogue options: 1. 'Bro' 2. 'Bruh' 3. 'Bhai'",
+    "Error 404: Maturity not found. Redirecting to memes...",
+    "You're not getting older. You're leveling up... slowly.",
+  ],
+  compliments: [
+    "You're genuinely one of the best people to have around.",
+    "Annoying? Yes. Replaceable? Absolutely not.",
+    "Life is funnier and better with you in it.",
+    "You're the kind of friend people are lucky to find.",
+    "Character development aside, you're a legend.",
+    "The world's better because you're in it. Don't tell anyone I said that.",
+    "You have a heart of gold wrapped in chaos. Perfect combo.",
+    "Thanks for laughing at my terrible jokes. That's true love.",
+  ],
+  charges: [
+    { crime: "Excessive Drama", severity: "MAXIMUM", evidence: "Exhibit A: Every group chat ever" },
+    { crime: "Replying After 7 Business Days", severity: "HIGH", evidence: "Exhibit B: 'sry just saw this' (3 weeks later)" },
+    { crime: "Stealing Food Without Asking", severity: "CRITICAL", evidence: "Exhibit C: My fries. Gone. No witnesses." },
+    { crime: "Questionable Life Decisions", severity: "LEGENDARY", evidence: "Exhibit D: That one time. You know which one." },
+    { crime: "Suspiciously High Confidence", severity: "UNMEASURABLE", evidence: "Exhibit E: 'I got this' (Narrator: They did not got this)" },
+    { crime: "Hoarding Memes Without Sharing", severity: "MODERATE", evidence: "Exhibit F: 47,000 screenshots. 0 sent." },
+  ],
+  birthdayMessage: `Happy Birthday, {friendName}! 🎂
+
+We've had our share of stupid moments, random laughs, unforgettable memories, and questionable decisions. Life is genuinely better with a friend like you around.
+
+I hope this year brings you happiness, success, good health, and everything you've been working toward. Keep being yourself, keep laughing, and never forget that you've got people who genuinely care about you.
+
+Enjoy your day, legend. You deserve it. ❤️`,
+  npcDialogues: [
+    "Bro, it's my birthday.",
+    "Task failed successfully.",
+    "Loading new personality...",
+    "Press E to socialize.",
+    "Error 404: Social battery not found.",
+    "Current quest: Eat cake. Avoid responsibilities.",
+    "Dialogue option: [Lie about age] [Accept cake] [Nap]",
+    "Achievement unlocked: Another year survived.",
+    "Warning: Sarcasm levels critical.",
+    "Initiating birthday protocol... 🎂",
+  ],
+  bossStats: {
+    name: "SHIVAM",
+    title: "FINAL BOSS: CHAOS INCARNATE",
+    difficulty: "Emotionally Unavailable",
+    specialAttack: "Ignoring Messages for 3 Weeks",
+    weakness: "Free Food (Any Kind)",
+    hp: 100,
+  },
+  loadingMessages: [
+    "Loading birthday personality...",
+    "Checking intelligence... ERROR 404",
+    "Checking age... ACCESS DENIED",
+    "Checking maturity... NOT FOUND",
+    "Checking sanity... VARIABLE MISSING",
+    "Scanning for common sense... 0 RESULTS",
+    "Calculating chaos index... OVERFLOW",
+    "Birthday mode activated!",
+  ],
+  fakeGiftMessage: "ABSOLUTELY NOTHING. BROKE FRIENDSHIP ECONOMY 💸",
+  finalPunchline: "CAKE KHA LE, EMOTIONAL MAT KAR. 😂🎂",
+};
+
+export type SiteConfig = typeof siteConfig;
