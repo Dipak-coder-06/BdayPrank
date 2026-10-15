@@ -28,10 +28,9 @@ function App() {
     setShowIntro(false);
     playSuccessChime();
     fireMassiveConfetti();
-    if (!muted) {
-      soundManager.playBgMusic();
-    }
-  }, [muted]);
+    soundManager.playBgMusic();
+    setMuted(false);
+  }, []);
 
   const toggleMute = useCallback(() => {
     setMuted(prev => {
