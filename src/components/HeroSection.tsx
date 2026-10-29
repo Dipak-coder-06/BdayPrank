@@ -142,7 +142,7 @@ export function HeroSection({ onRoastClick }: HeroSectionProps) {
           >
             <img
               src={siteConfig.friendPhotos[0]}
-              alt={`${siteConfig.friendName}'s birthday avatar`}
+              alt={`${siteConfig.friendName}: ${siteConfig.memoryCaptions[0]}`}
               className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl border-4 border-neon-purple/50 shadow-[0_0_60px_rgba(187,134,252,0.4)] object-cover"
               style={{ transform: `scale(${avatarScale})` }}
             />

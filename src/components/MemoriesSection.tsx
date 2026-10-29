@@ -93,11 +93,11 @@ export function MemoriesSection({ className = '' }: MemoriesSectionProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          📸 THE EVIDENCE LOCKER
+          📸 THE PHOTO RECEIPTS
         </motion.h2>
         <p className="text-center text-gray-400 mb-12 text-lg max-w-2xl mx-auto">
-          Classified photographic evidence of crimes against maturity. 
-          Each frame tells a story. Most of them are questionable.
+          Eight highly official records of Shivam being the main character. The committee reviewed every pose
+          and concluded: confidence is unlimited, filter budget is thriving, and the birthday legend is under investigation.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

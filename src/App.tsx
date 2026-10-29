@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Volume2, VolumeX, Heart, Sparkles } from 'lucide-react';
 import { IntroScreen } from './components/IntroScreen';
 import { HeroSection } from './components/HeroSection';
-import { VideoGallery } from './components/VideoGallery';
 import { MemoriesSection } from './components/MemoriesSection';
 import { siteConfig } from './config/siteConfig';
 import { playDrumHit, playSuccessChime, soundManager } from './utils/sound';
@@ -69,8 +68,6 @@ function App() {
         </button>
 
         <HeroSection key="hero" onRoastClick={() => {}} />
-
-        <VideoGallery key="videos" />
 
         <MemoriesSection key="memories" />
 
