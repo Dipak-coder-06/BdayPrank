@@ -96,7 +96,7 @@ export function MemoriesSection({ className = '' }: MemoriesSectionProps) {
           📸 THE PHOTO RECEIPTS
         </motion.h2>
         <p className="text-center text-gray-400 mb-12 text-lg max-w-2xl mx-auto">
-          Eight highly official records of Shivam being the main character. The committee reviewed every pose
+          Eight highly official records of Ayush being the main character. The committee reviewed every pose
           and concluded: confidence is unlimited, filter budget is thriving, and the birthday legend is under investigation.
         </p>
 

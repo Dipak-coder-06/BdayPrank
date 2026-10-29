@@ -1,5 +1,5 @@
 export const siteConfig = {
-  friendName: "Shivam",
+  friendName: "Ayush",
   senderName: "Your Bestie",
   friendPhotos: [
     "/WhatsApp%20Image%202026-10-29%20at%203.59.41%20PM.jpeg",
@@ -71,7 +71,7 @@ Enjoy your day, legend. You deserve it. ❤️`,
     "Initiating birthday protocol... 🎂",
   ],
   bossStats: {
-    name: "SHIVAM",
+    name: "AYUSH",
     title: "FINAL BOSS: CHAOS INCARNATE",
     difficulty: "Emotionally Unavailable",
     specialAttack: "Ignoring Messages for 3 Weeks",
